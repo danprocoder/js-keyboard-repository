@@ -1,0 +1,381 @@
+#keyboardWrapper {
+	z-index: 99999999999;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+#keyboardWrapper #vkShow {
+	width: 59px;
+	height: 59px;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	cursor: pointer;
+	font-size: 0px;
+	background-size: 66px;
+	background-position: -4px -25px;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+}
+
+#keyboardWrapper #vkShow.vkThemeDefault {
+	background-color: #efefef;
+	background-image: url('../images/keyboard.png');
+}
+
+#keyboardWrapper #vkShow.vkThemeInverse {
+	border: 1px solid #5F9744;
+	background-color: #393939;
+	color: #ffffff;
+	background-image: url('../images/keyboard-inverse.png');
+}
+
+@media screen and (max-width:495px) {
+	#keyboard {
+		padding-right: 1px !important;
+		padding-bottom: 1px !important;
+	}
+
+	#keyboard .vkKeyRow{
+		height: 24px !important;
+		margin-top: 1px !important;
+	}
+
+	#keyboard .vkKeyRow .k{
+		width: 22px !important;
+		height: 22px !important;
+		line-height: 22px !important;
+		margin-left: 1px !important;
+		font-size: 11px !important;
+	}
+
+	#keyboard .vkKeyRow .k.capsLock {
+		width: 35px !important;
+	}
+
+	#keyboard .vkKeyRow .k.enter {
+		width: 34px !important;
+	}
+
+	#keyboard .vkKeyRow .k.shiftl {
+		width: 47px !important;
+	}
+
+	#keyboard .vkKeyRow .k.shiftr {
+		width: 47px !important;
+	}
+
+	#keyboard .vkKeyRow .k.space {
+		width: 297px !important;
+	}
+
+	#keyboard .vkKeyRow .k.hideVk {
+		background-size: 39px !important;
+		background-position: -8px 4px !important;
+	}
+
+	#keyboard .vkKeyRow .k span {
+		font-size: 8px !important;
+	}
+}
+
+@media screen and (min-width:495px) and (max-width:650px) {
+	#keyboard {
+		padding-right: 1px !important;
+		padding-bottom: 1px !important;
+	}
+
+	#keyboard .vkKeyRow {
+		height: 30px !important;
+		margin-top: 1px !important;
+	}
+
+	#keyboard .vkKeyRow .k{
+		width: 28px !important;
+		height: 28px !important;
+		line-height: 28px !important;
+		font-size: 11px !important;
+		margin-left: 1px !important;
+	}
+
+	#keyboard .vkKeyRow .k.tab {
+		width: 50px !important;
+	}
+
+	#keyboard .vkKeyRow .k.capsLock {
+		width: 65px !important;
+	}
+
+	#keyboard .vkKeyRow .k.bslash {
+		width: 55px !important;
+	}
+
+	#keyboard .vkKeyRow .k.enter {
+		width: 71px !important;
+	}
+
+	#keyboard .vkKeyRow .k.shiftl {
+		width: 80px !important;
+	}
+
+	#keyboard .vkKeyRow .k.shiftr {
+		width: 87px !important;
+	}
+
+	#keyboard .vkKeyRow .k.space {
+		width: 418px !important;
+	}
+
+	#keyboard .vkKeyRow .k.backspace {
+		width: 77px !important;
+	}
+
+	#keyboard .vkKeyRow .k.hideVk{
+		background-size: 49px !important;
+		background-position: -10px 5px !important;
+	}
+}
+	
+@media screen and (min-width:650px) {
+	#keyboard {
+		padding-right: 3px !important;
+		padding-bottom: 3px !important;
+	}
+
+	#keyboard .vkKeyRow {
+		height: 36px !important;
+		margin-top: 3px !important;
+	}
+
+	#keyboard .vkKeyRow .k {
+		width: 34px !important;
+		height: 34px !important;
+		line-height: 34px !important;
+		margin-left: 3px !important;
+		font-size: 13px !important;
+	}
+
+	#keyboard .vkKeyRow .k.space {
+		width: 508px !important;
+	}
+
+	#keyboard .vkKeyRow .k.tab {
+		width: 50px !important;
+		font-size: 11px !important;
+	}
+
+	#keyboard .vkKeyRow .k.capsLock {
+		width: 66px !important;
+		font-size: 11px !important;
+	}
+
+	#keyboard .vkKeyRow .k.shift.shiftl {
+		width: 86px !important;
+		font-size: 11px !important;
+	}
+
+	#keyboard .vkKeyRow .k.shift.shiftr {
+		width: 105px !important;
+		font-size: 11px !important;
+	}
+
+	#keyboard .vkKeyRow .k.enter {
+		width: 86px !important;
+		font-size: 11px !important;
+	}
+
+	#keyboard .vkKeyRow .k.bslash{
+		width: 63px !important;
+	}
+
+	#keyboard .vkKeyRow .k.backspace {
+		width: 79px !important;
+		font-size: 11px !important;
+	}
+
+	#keyboard .vkKeyRow .k.hideVk {
+		background-size: 66px !important;
+		background-position: -15px 4px !important;
+	}
+
+	#keyboard .vkKeyRow .k span {
+		font-size: 11px !important;
+	}
+}
+
+#keyboard {
+	position: absolute;
+	bottom: 10px;
+	font-family:sans-serif;
+	display: none;
+	min-width: 350px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+#keyboard .vkKeyRow {
+	clear: left;
+	height: 30px;
+	margin-top: 1px;
+}
+
+#keyboard .vkKeyRow .k {
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 11px;
+	margin-left: 1px;
+	float: left;
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	transition: background-color 0.4s, color 0.1s, border-color 0.4s, box-shadow 0.2s;
+	-ms-transition: background-color 0.4s, color 0.1s, border-color 0.4s, box-shadow 0.2s;
+	-moz-transition: background-color 0.4s, color 0.1s, border-color 0.4s, box-shadow 0.2s;
+	-webkit-transition: background-color 0.4s, color 0.1s, border-color 0.4s, box-shadow 0.2s;
+	box-sizing: content-box!important;
+	-moz-box-sizing: content-box!important;
+	-webkit-box-sizing: content-box!important;
+}
+
+#keyboard .vkKeyRow .k span {
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	font-weight: normal;
+	line-height: 1;
+}
+
+#keyboard .vkKeyRow .k.tab {
+	width: 50px;
+}
+
+#keyboard .vkKeyRow .k.capsLock {
+	width: 65px;
+}
+
+#keyboard .vkKeyRow .k.bslash {
+	width: 55px;
+}
+
+#keyboard .vkKeyRow .k.enter {
+	width: 71px;
+}
+
+#keyboard .vkKeyRow .k.shiftl {
+	width: 80px;
+}
+
+#keyboard .vkKeyRow .k.shiftr {
+	width: 87px;
+}
+
+#keyboard .vkKeyRow .k.space {
+	width: 418px;
+}
+
+#keyboard .vkKeyRow .k.backspace {
+	width: 77px;
+}
+
+#keyboard .vkKeyRow .k.tab,
+#keyboard .vkKeyRow .k.capsLock,
+#keyboard .vkKeyRow .k.shift,
+#keyboard .vkKeyRow .k.enter,
+#keyboard .vkKeyRow .k.backspace {
+	font-weight: normal;
+	text-align: left;
+	text-indent: 4px;
+}
+
+#keyboard .vkKeyRow .k.hideVk,
+#keyboard .vkKeyRow .k.space {
+	font-size: 0px !important;
+}
+
+#keyboard .vkKeyRow .k.hideVk {
+	display: block !important;
+}
+
+/* Default theme */
+#keyboard.vkThemeDefault {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background: #dfdfdf;
+	box-shadow: inset 0 1px 1px #ffffff;
+}
+
+#keyboard.vkThemeDefault .vkKeyRow .k {
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	background-color: #e9e9e9;
+	color: #333333;
+	box-shadow: inset 0 1px 0 #ffffff;
+}
+
+#keyboard.vkThemeDefault .vkKeyRow .k:hover {
+	background-color: #E5CCCC;
+	color: #86160B;
+	box-shadow:inset 0 1px 0 #F2E7E7;
+}
+
+#keyboard.vkThemeDefault .vkKeyRow .k.shift.on,
+#keyboard.vkThemeDefault .vkKeyRow .k.capsLock.on,
+#keyboard.vkThemeDefault .vkKeyRow .k:active {
+	border-color: #3b0a05;
+	background-color: #3B0A05;
+	box-shadow: inset 0 -1px 0 #926060;
+	color: #fff;
+}
+
+#keyboard.vkThemeDefault .vkKeyRow .k.hideVk {
+	background-image: url('../images/keyboard.png');
+	background-repeat: no-repeat;
+}
+
+#keyboard.vkThemeDefault .vkKeyRow .k.hideVk:active {
+	background-image: url('../images/keyboard-inverse.png');
+}
+
+/* Inverse theme */
+#keyboard.vkThemeInverse {
+	background: #2c2c2c;
+	border-radius:3px;
+	box-shadow: inset 0 1px 0 #797979;
+	border: 1px solid #333333;
+}
+
+#keyboard.vkThemeInverse .vkKeyRow .k {
+	border: 1px solid #5F9744;
+	border-radius: 3px;
+	background-color: #393939;
+	color: #ffffff;
+	box-shadow: inset 0 1px 3px #797979;
+}
+
+#keyboard.vkThemeInverse .vkKeyRow .k:hover {
+	background-color: #292929;
+	color: #a2e780;
+	box-shadow: inset 0 1px 3px #696969;
+}
+
+#keyboard.vkThemeInverse .vkKeyRow .k.shift.on,
+#keyboard.vkThemeInverse .vkKeyRow .k.capsLock.on,
+#keyboard.vkThemeInverse .vkKeyRow .k:active {
+	background-color: #000000;
+	box-shadow: inset -1px -2px 1px #444444;
+	color: #ffffff !important;
+}
+
+#keyboard.vkThemeInverse .vkKeyRow .k.hideVk {
+	background-image: url('../images/keyboard-inverse.png');
+	background-repeat: no-repeat;
+}
