@@ -8,6 +8,7 @@
 			virtualKeyboard.init('inverse');
 		};
 		</script>
+		<link rel="stylesheet" type="text/css" href="css/virtualkeyboard.css" />
 		<style>
 		body {
 			margin: 0;
